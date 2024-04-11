@@ -5,7 +5,7 @@ namespace ovn_2_1_1
         class Point2D
         {
             public double X, Y;
-            public Point2D(int x, int y) { X = x; Y = y; }
+            public Point2D(double x, double y) { X = x; Y = y; }
             public override string ToString()
                 => $"({X} {Y})";
         }
