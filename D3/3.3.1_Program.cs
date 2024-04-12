@@ -14,14 +14,14 @@ namespace ovn_3_3_1
             Console.WriteLine($"i = {i}, j = {j}");
 
             int[] ia = new int[] { 1, 2, 3, 4, 5, 6, 7 };
-            PrintIntArray(ia);
+            PrintArray(ia);
             for (int x = 0; x < ia.Length - 1; x++)
             {
                 Swap(ref ia[x], ref ia[x + 1]);
             }
-            PrintIntArray(ia);
+            PrintArray(ia);
         }
-        private static void PrintIntArray(int[] ia)
+        private static void PrintArray<T>(T[] ia)
         {
             if (ia.Length <= 0)
                 Console.WriteLine();
