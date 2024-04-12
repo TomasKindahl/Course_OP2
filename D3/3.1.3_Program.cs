@@ -9,16 +9,15 @@ namespace ovn_3_1_3
             public override string ToString()
                 => $"({X} {Y})";
             static public Point2D operator +(Point2D p1, Point2D p2)
-                => new Point2D(p1.X+p2.X, p1.Y+p2.Y);
+                => new Point2D(p1.X + p2.X, p1.Y + p2.Y);
             static public Point2D operator -(Point2D p)
                 => new Point2D(-p.X, -p.Y);
             static public Point2D operator -(Point2D p1, Point2D p2)
                 => p1 + -p2;
             public double Distance(Point2D other)
             {
-                double dX = this.X - other.X;
-                double dY = this.Y - other.Y;
-                return Math.Sqrt(dX*dX + dY*dY);
+                double Sqr(double x) => x * x;
+                return Math.Sqrt(Sqr(this.X - other.X) + Sqr(this.Y - other.Y));
             }
         }
         static void Main(string[] args)
