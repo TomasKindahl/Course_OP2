@@ -1,5 +1,3 @@
-using System.Runtime.Intrinsics.X86;
-
 namespace ovn_4_1_2
 {
     internal class Program
