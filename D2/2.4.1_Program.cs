@@ -1,4 +1,4 @@
-namespace 2_4_1_ovn
+namespace ovn_2_4_1
 {
     internal class Program
     {
