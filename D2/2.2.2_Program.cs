@@ -46,8 +46,8 @@
             förstaMaj.Beskrivning = "arbetarrörelsens internationella högtidsdag";
             Console.WriteLine(förstaMaj);
             Helg nationaldagen = new Helg("Nationaldagen", typ: Typ.Sekulär, månad: Månad.Juni, dag: 6);
-            förstaMaj.Beskrivning = "Sveriges nationaldag";
-            Console.WriteLine(förstaMaj);
+            nationaldagen.Beskrivning = "Sveriges nationaldag";
+            Console.WriteLine(nationaldagen);
             Helg lucia = new Helg("Lucia", typ: Typ.Folklig, månad: Månad.December, dag: 13);
             lucia.Beskrivning = "organiskt framväxt ur folkligt midvinterfirande";
             Console.WriteLine(lucia);
